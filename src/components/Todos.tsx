@@ -12,13 +12,14 @@ function Todos() {
 
       <div className="flex-center-between">
         <input
-          className="outline-none pl-4 p-2 mb-2 rounded-full mr-2"
+          className="outline-none pl-4 p-2 mb-2 rounded-full mr-2 "
+          id="card"
           value={store.newTodo}
           onChange={(evt) => store.setNewTodo(evt.target.value)}
           placeholder="New todo"
         />
         <button
-          onClick={() => {
+          onMouseOver={() => {
             store.addTodo();
           }}
           className="circular-button"
