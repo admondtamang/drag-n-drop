@@ -10,6 +10,7 @@ const App: FC = (props) => {
   const ref = useRef<HTMLDivElement>(null);
   return (
     <div className="main">
+      {/* @ts-ignore */}
       <Parallax pages={2} ref={ref}>
         <ParallaxLayer
           offset={0}
